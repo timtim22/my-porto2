@@ -36,7 +36,7 @@ puts "5 skills created"
 		proident, sunt in culpa qui officia deserunt mollit anim id est 
 		laborum.",
 		main_image: "https://place-hold.it/6000x200",
-		thumb_image: "https://place-hold.it/350x200"
+		thumb_image: "https://place-hold.it/350x200"r
 
 	)
 end
