@@ -1,3 +1,10 @@
+3.times do |topic|
+	Topic.create!(
+		title: "Topic #{topic}"
+		)
+
+end
+
 10.times do |blog|
 	Blog.create!(
 		title: "My blog post #{blog}",
@@ -8,7 +15,8 @@
 		dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 		fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
 		proident, sunt in culpa qui officia deserunt mollit anim id est 
-		laborum."
+		laborum.",
+		topic_id: Topic.last.id
 	)
 end
 
@@ -23,10 +31,10 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio|
+8.times do |portfolio|
 	Portfolio.create!(
 		title: "portfolio title #{portfolio}",
-		subtitle: "great service",
+		subtitle: "Ruby on Rails",
 		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 		ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 		t enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -36,8 +44,26 @@ puts "5 skills created"
 		proident, sunt in culpa qui officia deserunt mollit anim id est 
 		laborum.",
 		main_image: "https://place-hold.it/6000x400",
-		thumb_image: "https://place-hold.it/350x200"r
+		thumb_image: "https://place-hold.it/350x200"
 
 	)
 end
-puts "0 portfolio created"
+
+1.times do |portfolio|
+	Portfolio.create!(
+		title: "portfolio title #{portfolio}",
+		subtitle: "Angular",
+		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+		ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		t enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+		dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+		fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+		proident, sunt in culpa qui officia deserunt mollit anim id est 
+		laborum.",
+		main_image: "https://place-hold.it/6000x400",
+		thumb_image: "https://place-hold.it/350x200"
+
+	)
+end
+puts "9 portfolio created"
