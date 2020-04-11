@@ -13,6 +13,8 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <%=raw flash[:notice] %>
+
     <% if current_user %>
       <%= link_to "logout", destroy_user_session_path, method: :delete %>
     <% else %>
